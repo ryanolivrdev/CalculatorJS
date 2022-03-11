@@ -1,69 +1,79 @@
-function soma() {
+//scss
+
+//operador é uma string
+function realizaroperacao(operador) {
+  //pegar os numeros que o usuario digitou
   var numero1 = Number(document.getElementById('numero1').value)
   var numero2 = Number(document.getElementById('numero2').value)
-  var resultado = numero1 + numero2
 
-  if (resultado > 0) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else if (resultado < 0) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else {
-    alert('Digite um número')
+  // se o usuario não digitou nada, alertar e retornar da função
+  if (numero1 === '' || numero2 === '') {
+    alert('escreva um numero!')
+    return
+  }
+
+  //verificar qual operação o usuario quer executar
+  switch (operador) {
+    //soma
+    case '+':
+      var resultado = soma(numero1, numero2)
+
+      document.getElementById(
+        'resultado1'
+      ).innerText = `O resultado é: ${resultado}`
+      break
+
+    //subtração
+    case '-':
+      var resultado = subtracao(numero1, numero2)
+
+      document.getElementById(
+        'resultado1'
+      ).innerText = `O resultado é: ${resultado}`
+      break
+
+    //subtração
+    case '*':
+      var resultado = multiplicacao(numero1, numero2)
+
+      document.getElementById(
+        'resultado1'
+      ).innerText = `O resultado é: ${resultado}`
+      break
+
+    //subtração
+    case '%':
+      var resultado = divisao(numero1, numero2)
+
+      document.getElementById(
+        'resultado1'
+      ).innerText = `O resultado é: ${resultado}`
+      break
   }
 }
 
-function subtracao() {
-  var numero1 = Number(document.getElementById('numero1').value)
-  var numero2 = Number(document.getElementById('numero2').value)
-  var resultado = numero1 - numero2
-
-  if (resultado > 0) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else if (resultado < 0) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else {
-    alert('Digite um número')
-  }
+function soma(numero1, numero2) {
+  return numero1 + numero2
 }
 
-function multiplicacao() {
-  var numero1 = Number(document.getElementById('numero1').value)
-  var numero2 = Number(document.getElementById('numero2').value)
-  var resultado = numero1 * numero2
-
-  if (resultado > 0) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else if (resultado < 0) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else {
-    alert('Digite um número')
-  }
+function subtracao(numero1, numero2) {
+  return numero1 - numero2
 }
 
-function divisao() {
-  var numero1 = Number(document.getElementById('numero1').value)
-  var numero2 = Number(document.getElementById('numero2').value)
-  var resultado = Math.round(numero1 / numero2)
+function multiplicacao(numero1, numero2) {
+  return numero1 * numero2
+}
 
-  if (resultado > 00000001) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else if (resultado < 00000001) {
-    document.getElementById('resultado1').innerText =
-      'O Resultado é ' + resultado
-  } else {
-    alert('Digite um número')
-  }
+function divisao(numero1, numero2) {
+  return numero1 / numero2
 }
 
 /*
-function raiz() {
+function raiz(numero1, numero2) {
+
+  var resultado = blablbal
+
+
   var numero1 = parseInt(document.getElementById('x').value)
   var numero2 = parseInt(document.getElementById('y').value)
   var resultado1 = Math.sqrt(numero1)
@@ -86,4 +96,14 @@ else if (resultado1 > 1) {
     document.getElementById(`resultado1`).innerText = 'O numero não é valido'
   }
 }
+
+
+  return resultado;
+
 */
+
+function soma(numero1, numero2) {
+  return numero1 + numero2
+}
+
+var resultado = soma(2, 5)

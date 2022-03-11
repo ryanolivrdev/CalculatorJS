@@ -5,8 +5,7 @@
 }
 body {
  background: #393E41;
- height: 100vh;
- width: 100vw;
+ height: calc(100vh - 6rem);
 }
 main{
   display: flex;
@@ -32,7 +31,7 @@ section {
 
 input {
  font-size: 1.2rem;
- padding: 1.6rem;
+ padding: 1.4rem;
  border: 2px solid grey;
  border-radius: 0.5rem;
 
@@ -42,13 +41,11 @@ button {
  font-size: 1.5rem;
  border: None;
  border-radius: 0.75rem;
-
 }
 
 .inputContainer{
   display: flex;
   gap: 3rem;
-
 }
 
 .valorContainer{
@@ -58,24 +55,20 @@ button {
   gap: 1.2rem;
 }
 
-/*nav{
-  display: flex;
+nav{
+  display:flex;
   align-items: center;
+  justify-content: center;
+  font-size: 2rem;
   text-align: center;
   height: 6rem;
   width: 100%;
   background: #D3D0CB;
 }
-.navContainer{
-  margin: 0 5rem 0 5rem;
-  font: 2rem sans-serif;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-}
 
-.span.h1{
+
+h1 > span {
   color: yellow;
 }
+
 
