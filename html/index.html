@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <script src="/CalculatorJS/js/main.js"></script>
+    <link rel="stylesheet" href="/CalculatorJS/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CalculatorJS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navContainer">
+        <!--<h1>Calculator<span class="span h1">.JS</span></h1>-->
+        <!--<h1>raiz</h1>-->
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h1>Calculadora</h1>
+        <div class="inputContainer">
+          <div class="valorContainer">
+            <p>Digite um valor</p>
+            <input type="number" id="numero1" placeholder="x" />
+          </div>
+          <div class="valorContainer">
+            <p>Digite um valor</p>
+            <input type="number" id="numero2" placeholder="y" />
+          </div>
+        </div>
+        <p>Escolha uma função</p>
+        <div>
+          <button onclick="soma()">+</button>
+          <button onclick="subtracao()">-</button>
+          <button onclick="multiplicacao()">x</button>
+          <button onclick="divisao()">/</button>
+          <!-- <button onclick="raiz()">raiz</button> -->
+        </div>
+        <div class="resultadoContainer">
+          <label id="resultado1"></label>
+          <!-- <label id="resultado2"></label> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
