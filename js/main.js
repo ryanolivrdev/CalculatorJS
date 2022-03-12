@@ -1,7 +1,7 @@
 //scss
 
 //operador é uma string
-function realizaroperacao(operador) {
+function aguacomqueijo(operador) {
   //pegar os numeros que o usuario digitou
   var numero1 = Number(document.getElementById('numero1').value)
   var numero2 = Number(document.getElementById('numero2').value)
@@ -32,7 +32,7 @@ function realizaroperacao(operador) {
       ).innerText = `O resultado é: ${resultado}`
       break
 
-    //subtração
+    //multiplicação
     case '*':
       var resultado = multiplicacao(numero1, numero2)
 
@@ -41,7 +41,7 @@ function realizaroperacao(operador) {
       ).innerText = `O resultado é: ${resultado}`
       break
 
-    //subtração
+    //divisão
     case '%':
       var resultado = divisao(numero1, numero2)
 
@@ -103,7 +103,9 @@ else if (resultado1 > 1) {
 */
 
 function soma(numero1, numero2) {
-  return numero1 + numero2
+  return valor
 }
 
 var resultado = soma(2, 5)
+
+void loop
