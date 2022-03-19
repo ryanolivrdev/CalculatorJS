@@ -4,8 +4,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 :root{
-  --base-color: hsl(295, 43%, 53%);
-  --base-color-second: #dbe4bc;
+  --base-color: #202529;
+  --base-color-second: #4C555C;
 
 }
 body {
