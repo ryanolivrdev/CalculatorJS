@@ -7,8 +7,8 @@ function realizarOperacao(operador) {
   var numero2 = Number(document.getElementById('numero2').value)
 
   // se o usuario não digitou nada, alertar e retornar da função
-  if (numero1 === '' || numero2 === '') {
-    alert('escreva um numero!')
+  if (numero1 == ' ' || numero2 == ' ') {
+    alert('Escreva um número!')
     return
   }
 
